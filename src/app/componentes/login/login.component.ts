@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink, Router } from '@angular/router';
+import { Usuario } from "../../clases/usuario";
 
 @Component({
   selector: 'app-login',
@@ -7,7 +8,7 @@ import { RouterLink, Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  public Usuario;
+  public Usuario:Usuario;
   constructor(private router:Router) { }
 
   ngOnInit(): void {
@@ -21,8 +22,4 @@ export class LoginComponent implements OnInit {
     }
   }
 
-}
-export class Usuario{
-  public nombre;
-  public clave;
 }
