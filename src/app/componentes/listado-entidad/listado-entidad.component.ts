@@ -19,7 +19,9 @@ export class ListadoEntidadComponent implements OnInit {
 
   }
 
+  enviarPersona(persona){
 
+  }
 
 }
 
