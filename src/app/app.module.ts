@@ -8,6 +8,9 @@ import { LoginComponent } from './componentes/login/login.component';
 import { CalculadoraComponent } from './componentes/calculadora/calculadora.component';
 import { BienvenidoComponent } from './componentes/bienvenido/bienvenido.component';
 import { ErrorComponent } from './componentes/error/error.component';
+import { ControlEntidadComponent } from './componentes/control-entidad/control-entidad.component';
+import { ListadoEntidadComponent } from './componentes/listado-entidad/listado-entidad.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,12 +19,15 @@ import { ErrorComponent } from './componentes/error/error.component';
     LoginComponent,
     CalculadoraComponent,
     BienvenidoComponent,
-    ErrorComponent
+    ErrorComponent,
+    ControlEntidadComponent,
+    ListadoEntidadComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
