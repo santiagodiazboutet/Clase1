@@ -1,0 +1,16 @@
+<tbody>
+  <tr>
+      <td style="width: 10%;">{{persona.Nombre}}</td>
+      <td style="width: 10%;">{{persona.Apellido}}</td>
+      <td style="width: 10%;">{{persona.email}}</td>
+      <td style="width: 10%;">{{persona.Sexo}}</td>
+      <td style="width: 10%;">
+          <img [src]="persona.FotoPerfil" alt="" style="width: 50px; height: 50px;">
+      </td>
+      <td style="width: 15%;">
+        <!-- <button mat-icon-button color="primary" (click)="enviarPersona(persona)"> Ver detalles
+          </button> -->
+          <app-boton-entidad [persona]="persona" [cosas]="cosas" [borrado]="borrado"></app-boton-entidad>
+    </td>
+  </tr>
+</tbody>

@@ -11,6 +11,8 @@ import { ErrorComponent } from './componentes/error/error.component';
 import { ControlEntidadComponent } from './componentes/control-entidad/control-entidad.component';
 import { ListadoEntidadComponent } from './componentes/listado-entidad/listado-entidad.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BotonEntidadComponent } from './componentes/boton-entidad/boton-entidad.component';
+import { DetalleEntidadComponent } from './componentes/detalle-entidad/detalle-entidad.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { HttpClientModule } from '@angular/common/http';
     BienvenidoComponent,
     ErrorComponent,
     ControlEntidadComponent,
-    ListadoEntidadComponent
+    ListadoEntidadComponent,
+    BotonEntidadComponent,
+    DetalleEntidadComponent
   ],
   imports: [
     BrowserModule,

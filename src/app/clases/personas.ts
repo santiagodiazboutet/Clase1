@@ -6,4 +6,11 @@ Nombre:string;
 Apellido:string;
 FechaNac:string;
 FotoPerfil:string;
+
+
+
+
+
+
+
 }

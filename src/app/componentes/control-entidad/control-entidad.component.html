@@ -1,2 +1,7 @@
-<p>control-entidad works!</p>
-<app-listado-entidad [cosas]="cosas"></app-listado-entidad>
+<app-listado-entidad [cosas]="cosas" (emisor)="personaSeleccionada($event)"></app-listado-entidad>
+<div  *ngIf="personaSelecc !== undefined">
+<app-detalle-entidad [persona]="personaSelecc" [cosas]="cosas" [borrado]="listadoborrados"></app-detalle-entidad>
+</div>
+
+<h1>Listado Borrados</h1>
+<app-listado-entidad [cosas]="listadoborrados" (emisor)="personaSeleccionada($event)"></app-listado-entidad>

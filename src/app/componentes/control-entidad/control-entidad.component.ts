@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Personas } from 'src/app/clases/personas';
 import { mihttpclientService } from 'src/app/servicios/mihttpclient.service';
 
@@ -10,9 +10,11 @@ import { mihttpclientService } from 'src/app/servicios/mihttpclient.service';
 })
 export class ControlEntidadComponent implements OnInit {
   cosas:Array<Personas>;
+  @Input() personaSelecc:Personas;
   @Output() usuarioSeleccionado: EventEmitter<any> = new EventEmitter<any>();
-  constructor(private httpservice:mihttpclientService) {
+  listadoborrados:Array<Personas>=new Array<Personas>();
 
+  constructor(private httpservice:mihttpclientService) {
   }
 
   ngOnInit(): void {
@@ -31,4 +33,11 @@ export class ControlEntidadComponent implements OnInit {
 
 
   }
+
+
+  personaSeleccionada(persona:Personas){
+    console.log(persona);
+    this.personaSelecc=persona;
+  }
+
 }
